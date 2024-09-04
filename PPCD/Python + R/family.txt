@@ -1,0 +1,7 @@
+FamilyNames FamilyAges FamilyGenders FamilyWeights
+Dad 43 Male 188
+Mom 42 Female 136
+Sis 12 Female 83
+Bro 8 Male 61
+Dog 5 Female 44
+Cat 2 Male 10
