@@ -1,0 +1,7 @@
+#C:\Users\denis\AppData\Roaming\Python\Python312\site-packages\ipykernel_launcher.py --f=c:\Users\denis\AppData\Roaming\jupyter\runtime\kernel-v2-13124re7DRzxyqS81.json
+# GMT Sat Aug 31 05:28:33 2024
+# 
+0 1 2 3
+1 2
+2
+3
