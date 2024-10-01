@@ -1,0 +1,41 @@
+Crear y ejecutar las sentencias SQL que resuelvan lo siguiente:
+1) Crear las tablas a usar para la práctica (Script DDL.sql)
+2) Separar el atributo nombre de las tablas alumno y asesor en nombre y apellido paterno (use alters)
+3) Revisar el script inserts.sql y haga los ajustes necesarios para poder insertar los datos correctamente donde corresponda
+4) Ejecutar el script inserts.sql y valide que los datos sean correctos
+5) Alumno U Asesor (sólo en el atributo nombre)
+6) Alumno INTERSECT Asesor (sólo en el atributo nombre)
+7) Alumno - Asesor y Asesor - Alumno
+8) Alumno natural join Asesor y Alumno cross join asesor
+9) Modificar la tabla Alumno, agregue los siguientes atributos: carrera varchar(40) y edad smallint
+10) Insertar los siguientes 5 registros:
+id_Alumno,nombre,ap_paterno, carrera,edad,id_asesor
+6,Isaac,Lemus,Petrolera,30,as-1
+7,Gabriela,Suarezs,Industrial,24,as-3
+8,Pablo,Gonzalez,Computacion,23,as-2
+9,David,Rivera,Industrial,25,as-1
+10,Dayana,Plata,Computacion,24,as-4
+11) Actualizar los 5 registros iniciales para asignar valores en los atributos agregados
+1,Petrolera,27
+2,Telecomunicaciones,24
+3,Computacion,27
+4,Industrial,25
+5,Computacion,19
+12) Validar que los datos coincidan con lo esperado
+13) Nombre completo del alumno de mayor edad
+14) Nombre completo del alumno de menor edad
+15) cantidad de alumnos por carrera
+16) Nombre de la carrera que tiene a la persona más joven. Agrupar los datos.
+17) Nombre de la carrera que tiene a la persona más grande. Agrupar los datos. 
+18) Nombre de la carrera que tiene a la persona más joven. Usar subconsultas.
+19) Nombre de la carrera que tiene a la persona más grande. Usar subconsultas
+20) Promedio de edad por carrera
+21) borrar al asesor Adolfo Millan. Validar y explicar qué sucede en la tabla alumno. 
+22) Actualizar el id del asesor Fernando Arreola, asignar "as-5". Validar y explicar qué sucede en la tabla alumno.
+23) inicie sesion en dos terminales , conectandose en ambas a la base de datos donde almaceno los datos del presente ejercicio
+- en ambas sesiones, inicie una transaccion
+- en la ventana A, actualice el apellido del alumno con id = 7 por "Suarez"
+- en la ventana B, seleccione toda la información del alumno con id = 7. ¿Qué observa?
+- en la ventaba A, ingrese commit
+- en la ventana B, seleccione toda la información del alumno con id = 7, posteriormente rollback. ¿Qué observa?
+- justifique los resultados obtenidos
