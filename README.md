@@ -1,1 +1,1 @@
-Notebooks de clases de PPCD y MMCCD 
+Notebooks y códigos de clases/tareas 
