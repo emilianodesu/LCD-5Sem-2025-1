@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Reducer para la matriz de momentos aumentada"""
 import numpy as np
 
