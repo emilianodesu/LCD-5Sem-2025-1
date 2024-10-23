@@ -1,3 +1,4 @@
+clave,nombre,ap_paterno,ap_materno,fecha_nacimiento,estado,id_candidato
 1,MAURICIO,VARGAS,MEDINA,1977-12-13,mexico,default
 2,JOSE,ROSALES,PEREZ,1977-5-20,mexico,default
 3,JOSE,FONSECA,RAMIREZ,1961-6-18,mexico,CAND-4
