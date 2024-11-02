@@ -17,7 +17,6 @@
 # En Linux y MAC
 # mpirun -n 2 python3 mpi_1.py
 
-
 ##### MÓDULOS #####
 # Módulo MPI para Python.
 from mpi4py import MPI
