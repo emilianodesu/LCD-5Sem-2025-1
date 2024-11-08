@@ -29,6 +29,7 @@ items_consumed = 0
 if rank == 0:
     # Mientras no se hayan producido 5 elementos.
     while items_produced < 5:
+        file_name = input("\nNombre del archivo: ")
         name = input("\nNombre: ")
         country = input("Pais de origen: ")
         cores = int(input("Cantidad de núcleos: "))
@@ -38,7 +39,7 @@ if rank == 0:
         os = input("Sistema Operativo: ")
 
         # Enviar los datos al proceso 1
-        data = (name, country, cores, ram, storage, tflops, os)
+        data = (file_name, name, country, cores, ram, storage, tflops, os)
         comm.send(data, dest=1)
 
         items_produced += 1
@@ -48,16 +49,17 @@ if rank == 0:
 
 # Proceso 1
 if rank == 1:
-    with open('computersV3.csv', 'w', encoding='utf-8') as file:
+    with open(file_name, 'w', encoding='utf-8') as file:
         file.write("0,NAME,COUNTRY,CORES,RAM,STORAGE,TFLOPS,OS\n")
     # Mientras no se hayan consumido 5 elementos.
     while items_consumed < 5:
         # Recibir los datos del proceso 0
         data = comm.recv(source=0)
         # Escribir los datos en el archivo
-        with open('computersV3.csv', 'a', encoding='utf-8') as file:
+        with open(file_name, 'a', encoding='utf-8') as file:
             whole_thing = f"{items_consumed + 1},{data[0]},{data[1]},{data[2]},{data[3]},{data[4]},{data[5]},{data[6]}\n"
             file.write(whole_thing)
         items_consumed += 1
+        print(f"\nElemento {items_consumed} guardado en {file_name}")
         # Notificar al proceso 0 que se ha consumido un elemento
         comm.send(None, dest=0)
