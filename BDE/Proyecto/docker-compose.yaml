@@ -1,0 +1,16 @@
+# Despligue de la base de datos en VPS
+services:
+  database:
+    image: postgres:15.8
+    container_name: pg_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: bde_user
+      POSTGRES_PASSWORD: bd3_User#
+      POSTGRES_DB: proyecto_final
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d
+volumes:
+  pg_data:

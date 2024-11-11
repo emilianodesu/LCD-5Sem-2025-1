@@ -1922,127 +1922,96 @@
     <fields>
       <field>
         <name>year</name>
-        <rename/>
       </field>
       <field>
         <name>month</name>
-        <rename/>
       </field>
       <field>
         <name>day</name>
-        <rename/>
       </field>
       <field>
         <name>day_of_week</name>
-        <rename/>
       </field>
       <field>
         <name>airline</name>
-        <rename/>
       </field>
       <field>
         <name>flight_number</name>
-        <rename/>
       </field>
       <field>
         <name>tail_number</name>
-        <rename/>
       </field>
       <field>
         <name>origin_airport</name>
-        <rename/>
       </field>
       <field>
         <name>destination_airport</name>
-        <rename/>
       </field>
       <field>
         <name>scheduled_departure</name>
-        <rename/>
       </field>
       <field>
         <name>departure_time</name>
-        <rename/>
       </field>
       <field>
         <name>departure_delay</name>
-        <rename/>
       </field>
       <field>
         <name>taxi_out</name>
-        <rename/>
       </field>
       <field>
         <name>wheels_off</name>
-        <rename/>
       </field>
       <field>
         <name>scheduled_time</name>
-        <rename/>
       </field>
       <field>
         <name>elapsed_time</name>
-        <rename/>
       </field>
       <field>
         <name>air_time</name>
-        <rename/>
       </field>
       <field>
         <name>distance</name>
-        <rename/>
       </field>
       <field>
         <name>wheels_on</name>
-        <rename/>
       </field>
       <field>
         <name>taxi_in</name>
-        <rename/>
       </field>
       <field>
         <name>scheduled_arrival</name>
-        <rename/>
       </field>
       <field>
         <name>arrival_time</name>
-        <rename/>
       </field>
       <field>
         <name>arrivale_delay</name>
-        <rename/>
       </field>
       <field>
         <name>diverted</name>
-        <rename/>
       </field>
       <field>
         <name>cancelled</name>
-        <rename/>
       </field>
       <field>
         <name>cancellation_reason</name>
-        <rename/>
       </field>
       <field>
         <name>air_system_delay</name>
-        <rename/>
       </field>
       <field>
         <name>security_delay</name>
-        <rename/>
       </field>
       <field>
         <name>airline_delay</name>
-        <rename/>
       </field>
       <field>
         <name>late_aircraft_delay</name>
-        <rename/>
       </field>
       <field>
         <name>weather_delay</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>

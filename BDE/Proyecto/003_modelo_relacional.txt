@@ -1,0 +1,33 @@
+ESTADO = {
+    id_estado INT PK,
+    nombre_est VARCHAR(100)
+}
+
+MUNICIPIO = {
+    [
+        id_estado INT FK,
+        id_municipio INT
+    ] PK,
+    nombre_mun VARCHAR(150),
+    lat FLOAT,
+    lon FLOAT,
+    dh INT,
+}
+
+PREDICCION = {
+    [
+        id_estado INT FK,
+        id_municipio INT FK,
+        fecha TIMESTAMP
+    ] PK,
+    cc FLOAT C,
+    desciel VARCHAR(255),
+    dirvienc VARCHAR(60),
+    dirvieng INT,
+    ndia VARCHAR(10) C,
+    prec FLOAT C,
+    probprec INT C,
+    tmax FLOAT,
+    tmin FLOAT,
+    velvien FLOAT C
+}
