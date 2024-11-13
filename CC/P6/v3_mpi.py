@@ -28,8 +28,9 @@ items_consumed = 0
 # Proceso 0
 if rank == 0:
     # Mientras no se hayan producido 5 elementos.
+    file_name = input("\nNombre del archivo: ")
+    comm.send(file_name, dest=1)
     while items_produced < 5:
-        file_name = input("\nNombre del archivo: ")
         name = input("\nNombre: ")
         country = input("Pais de origen: ")
         cores = int(input("Cantidad de núcleos: "))
@@ -37,18 +38,16 @@ if rank == 0:
         storage = float(input("Almacenamiento (TB): "))
         tflops = float(input("TeraFLOPS: "))
         os = input("Sistema Operativo: ")
-
         # Enviar los datos al proceso 1
-        data = (file_name, name, country, cores, ram, storage, tflops, os)
+        data = (name, country, cores, ram, storage, tflops, os)
         comm.send(data, dest=1)
-
         items_produced += 1
-
         # Esperar a que el proceso 1 haya consumido los datos
         comm.recv(source=1)
 
 # Proceso 1
 if rank == 1:
+    file_name = comm.recv(source=0)
     with open(file_name, 'w', encoding='utf-8') as file:
         file.write("0,NAME,COUNTRY,CORES,RAM,STORAGE,TFLOPS,OS\n")
     # Mientras no se hayan consumido 5 elementos.
@@ -59,7 +58,7 @@ if rank == 1:
         with open(file_name, 'a', encoding='utf-8') as file:
             whole_thing = f"{items_consumed + 1},{data[0]},{data[1]},{data[2]},{data[3]},{data[4]},{data[5]},{data[6]}\n"
             file.write(whole_thing)
+        print(f"\nComputadora Top {items_consumed+1} guardado en {file_name}")
         items_consumed += 1
-        print(f"\nElemento {items_consumed} guardado en {file_name}")
         # Notificar al proceso 0 que se ha consumido un elemento
         comm.send(None, dest=0)
