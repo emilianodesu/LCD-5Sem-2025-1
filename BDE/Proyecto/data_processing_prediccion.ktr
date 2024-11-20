@@ -428,10 +428,10 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2024/11/11 02:10:52.767</created_date>
+    <created_date>2024/11/16 13:53:27.909</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2024/11/11 02:10:52.767</modified_date>
-    <key_for_session_key/>
+    <modified_date>2024/11/16 13:53:27.909</modified_date>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -445,8 +445,8 @@ also set to
 match the 
 physical
 db model </note>
-      <xloc>64</xloc>
-      <yloc>240</yloc>
+      <xloc>176</xloc>
+      <yloc>160</yloc>
       <width>106</width>
       <heigth>190</heigth>
       <fontname>Segoe UI</fontname>
@@ -465,17 +465,13 @@ db model </note>
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>Maps "ndia" from
-integers to days 
-of the week
-
-removes "T00"
+      <note>removes "T00"
 at the end of
 "fecha"</note>
-      <xloc>208</xloc>
-      <yloc>240</yloc>
-      <width>127</width>
-      <heigth>150</heigth>
+      <xloc>320</xloc>
+      <yloc>160</yloc>
+      <width>106</width>
+      <heigth>70</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
       <fontbold>N</fontbold>
@@ -492,12 +488,12 @@ at the end of
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>          Transforms "fecha" to         
-          Date type with format        
-          YYYY/MM/DD                      </note>
-      <xloc>400</xloc>
-      <yloc>240</yloc>
-      <width>231</width>
+      <note>Transforms "fecha" to
+Date type with format
+YYYY/MM/DD TT:TT:TT.000</note>
+      <xloc>464</xloc>
+      <yloc>160</yloc>
+      <width>188</width>
       <heigth>70</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>9</fontsize>
@@ -516,8 +512,8 @@ at the end of
     </notepad>
     <notepad>
       <note>Loads data to the db</note>
-      <xloc>736</xloc>
-      <yloc>256</yloc>
+      <xloc>704</xloc>
+      <yloc>448</yloc>
       <width>148</width>
       <heigth>30</heigth>
       <fontname>Segoe UI</fontname>
@@ -535,9 +531,82 @@ at the end of
       <bordercolorblue>100</bordercolorblue>
       <drawshadow>Y</drawshadow>
     </notepad>
+    <notepad>
+      <note>The day of the week is
+extracted directly from the date.
+
+Maps "ndia" from integers to days 
+of the week</note>
+      <xloc>704</xloc>
+      <yloc>160</yloc>
+      <width>241</width>
+      <heigth>110</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Filter rows to write only the most
+recent date to the db</note>
+      <xloc>1120</xloc>
+      <yloc>224</yloc>
+      <width>228</width>
+      <heigth>50</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>The filter used is given by the field
+ndia which has values in {0,1,2,3}.
+
+To SELECT the most recent date, only
+rows with filter value 3
+ will be loaded to the db</note>
+      <xloc>1120</xloc>
+      <yloc>304</yloc>
+      <width>255</width>
+      <heigth>130</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
   <connection>
-    <name>project_db</name>
+    <name>db_proyecto</name>
     <server>67.217.242.23</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
@@ -559,6 +628,10 @@ at the end of
       </attribute>
       <attribute>
         <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
         <attribute>N</attribute>
       </attribute>
       <attribute>
@@ -590,11 +663,11 @@ at the end of
   <order>
     <hop>
       <from>read_json</from>
-      <to>map_days</to>
+      <to>remove_T</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>map_days</from>
+      <from>remove_T</from>
       <to>split_date</to>
       <enabled>Y</enabled>
     </hop>
@@ -604,21 +677,429 @@ at the end of
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>concat_date</from>
+      <to>extract_day_week</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>extract_day_week</from>
+      <to>map_days</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>map_days</from>
+      <to>select_prediccion</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>select_prediccion</from>
       <to>unique_prediccion</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>unique_prediccion</from>
-      <to>output_prediccion</to>
+      <to>filter_past_days</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>concat_date</from>
-      <to>select_prediccion</to>
+      <from>filter_past_days</from>
+      <to>output_prediccion</to>
       <enabled>Y</enabled>
     </hop>
   </order>
+  <step>
+    <name>concat_date</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>Y</failIfNoFile>
+    <calculation>
+      <field_name>diag</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>/</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>t1</field_name>
+      <calc_type>ADD3</calc_type>
+      <field_a>year</field_a>
+      <field_b>diag</field_b>
+      <field_c>month</field_c>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>fecha_t</field_name>
+      <calc_type>ADD3</calc_type>
+      <field_a>t1</field_a>
+      <field_b>diag</field_b>
+      <field_c>day</field_c>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>t2</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a> 00:00:00.000</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>fecha</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>fecha_t</field_a>
+      <field_b>t2</field_b>
+      <field_c/>
+      <value_type>Date</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>extract_day_week</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>Y</failIfNoFile>
+    <calculation>
+      <field_name>ndia</field_name>
+      <calc_type>DAY_OF_WEEK</calc_type>
+      <field_a>fecha</field_a>
+      <field_b/>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>752</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>filter_past_days</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>output_prediccion</send_true_to>
+    <send_false_to/>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>filter</leftvalue>
+        <function>=</function>
+        <rightvalue/>
+        <value>
+          <name>constant</name>
+          <type>Integer</type>
+          <text>3</text>
+          <length>-1</length>
+          <precision>0</precision>
+          <isnull>N</isnull>
+          <mask>#</mask>
+        </value>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1024</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>map_days</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>2</replace_string>
+        <replace_by_string>lunes</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>3</replace_string>
+        <replace_by_string>martes</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>4</replace_string>
+        <replace_by_string>miércoles</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>5</replace_string>
+        <replace_by_string>jueves</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>6</replace_string>
+        <replace_by_string>viernes</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>7</replace_string>
+        <replace_by_string>sábado</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+      <field>
+        <in_stream_name>ndia</in_stream_name>
+        <out_stream_name/>
+        <use_regex>no</use_regex>
+        <replace_string>1</replace_string>
+        <replace_by_string>domingo</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+        <is_unicode>no</is_unicode>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>896</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>output_prediccion</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>db_proyecto</connection>
+    <schema>public</schema>
+    <table>prediccion</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>cc</column_name>
+        <stream_name>cc</stream_name>
+      </field>
+      <field>
+        <column_name>desciel</column_name>
+        <stream_name>desciel</stream_name>
+      </field>
+      <field>
+        <column_name>dirvienc</column_name>
+        <stream_name>dirvienc</stream_name>
+      </field>
+      <field>
+        <column_name>dirvieng</column_name>
+        <stream_name>dirvieng</stream_name>
+      </field>
+      <field>
+        <column_name>id_estado</column_name>
+        <stream_name>id_estado</stream_name>
+      </field>
+      <field>
+        <column_name>id_municipio</column_name>
+        <stream_name>id_municipio</stream_name>
+      </field>
+      <field>
+        <column_name>ndia</column_name>
+        <stream_name>ndia</stream_name>
+      </field>
+      <field>
+        <column_name>prec</column_name>
+        <stream_name>prec</stream_name>
+      </field>
+      <field>
+        <column_name>probprec</column_name>
+        <stream_name>probprec</stream_name>
+      </field>
+      <field>
+        <column_name>tmax</column_name>
+        <stream_name>tmax</stream_name>
+      </field>
+      <field>
+        <column_name>tmin</column_name>
+        <stream_name>tmin</stream_name>
+      </field>
+      <field>
+        <column_name>velvien</column_name>
+        <stream_name>velvien</stream_name>
+      </field>
+      <field>
+        <column_name>fecha</column_name>
+        <stream_name>fecha</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>read_json</name>
     <type>JsonInput</type>
@@ -781,19 +1262,6 @@ at the end of
         <repeat>N</repeat>
       </field>
       <field>
-        <name>ndia</name>
-        <path>$[*].ndia</path>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-      </field>
-      <field>
         <name>nombre_est</name>
         <path>$[*].nes</path>
         <type>String</type>
@@ -884,6 +1352,19 @@ at the end of
         <trim_type>none</trim_type>
         <repeat>N</repeat>
       </field>
+      <field>
+        <name>filter</name>
+        <path>$[*].ndia</path>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
     </fields>
     <limit>0</limit>
     <IsInFields>N</IsInFields>
@@ -906,13 +1387,13 @@ at the end of
       </output>
     </remotesteps>
     <GUI>
-      <xloc>96</xloc>
-      <yloc>160</yloc>
+      <xloc>208</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>map_days</name>
+    <name>remove_T</name>
     <type>ReplaceString</type>
     <description/>
     <distribute>Y</distribute>
@@ -923,90 +1404,6 @@ at the end of
       <schema_name/>
     </partitioning>
     <fields>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>0</replace_string>
-        <replace_by_string>lunes</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>1</replace_string>
-        <replace_by_string>martes</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>2</replace_string>
-        <replace_by_string>miércoles</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>3</replace_string>
-        <replace_by_string>jueves</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>4</replace_string>
-        <replace_by_string>viernes</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>5</replace_string>
-        <replace_by_string>sábado</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
-      <field>
-        <in_stream_name>ndia</in_stream_name>
-        <out_stream_name/>
-        <use_regex>no</use_regex>
-        <replace_string>6</replace_string>
-        <replace_by_string>domingo</replace_by_string>
-        <set_empty_string>N</set_empty_string>
-        <replace_field_by_string/>
-        <whole_word>no</whole_word>
-        <case_sensitive>no</case_sensitive>
-        <is_unicode>no</is_unicode>
-      </field>
       <field>
         <in_stream_name>fecha_s</in_stream_name>
         <out_stream_name/>
@@ -1029,8 +1426,95 @@ at the end of
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
-      <yloc>160</yloc>
+      <xloc>352</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>select_prediccion</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>cc</name>
+      </field>
+      <field>
+        <name>desciel</name>
+      </field>
+      <field>
+        <name>dirvienc</name>
+      </field>
+      <field>
+        <name>dirvieng</name>
+      </field>
+      <field>
+        <name>id_estado</name>
+      </field>
+      <field>
+        <name>id_municipio</name>
+      </field>
+      <field>
+        <name>ndia</name>
+      </field>
+      <field>
+        <name>prec</name>
+      </field>
+      <field>
+        <name>probprec</name>
+      </field>
+      <field>
+        <name>tmax</name>
+      </field>
+      <field>
+        <name>tmin</name>
+      </field>
+      <field>
+        <name>velvien</name>
+      </field>
+      <field>
+        <name>fecha</name>
+      </field>
+      <field>
+        <name>filter</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>fecha</name>
+        <rename>fecha</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy/MM/dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1024</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1074,272 +1558,8 @@ at the end of
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>concat_date</name>
-    <type>Calculator</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <failIfNoFile>Y</failIfNoFile>
-    <calculation>
-      <field_name>diag</field_name>
-      <calc_type>CONSTANT</calc_type>
-      <field_a>/</field_a>
-      <field_b/>
-      <field_c/>
-      <value_type>String</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <remove>Y</remove>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <currency_symbol/>
-    </calculation>
-    <calculation>
-      <field_name>t1</field_name>
-      <calc_type>ADD3</calc_type>
-      <field_a>year</field_a>
-      <field_b>diag</field_b>
-      <field_c>month</field_c>
-      <value_type>String</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <remove>Y</remove>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <currency_symbol/>
-    </calculation>
-    <calculation>
-      <field_name>fecha</field_name>
-      <calc_type>ADD3</calc_type>
-      <field_a>t1</field_a>
-      <field_b>diag</field_b>
-      <field_c>day</field_c>
-      <value_type>String</value_type>
-      <value_length>-1</value_length>
-      <value_precision>-1</value_precision>
-      <remove>N</remove>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <currency_symbol/>
-    </calculation>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>544</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>select_prediccion</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>cc</name>
-        <rename/>
-      </field>
-      <field>
-        <name>desciel</name>
-        <rename/>
-      </field>
-      <field>
-        <name>dirvienc</name>
-        <rename/>
-      </field>
-      <field>
-        <name>dirvieng</name>
-        <rename/>
-      </field>
-      <field>
-        <name>id_estado</name>
-        <rename/>
-      </field>
-      <field>
-        <name>id_municipio</name>
-        <rename/>
-      </field>
-      <field>
-        <name>ndia</name>
-        <rename/>
-      </field>
-      <field>
-        <name>prec</name>
-        <rename/>
-      </field>
-      <field>
-        <name>probprec</name>
-        <rename/>
-      </field>
-      <field>
-        <name>tmax</name>
-        <rename/>
-      </field>
-      <field>
-        <name>tmin</name>
-        <rename/>
-      </field>
-      <field>
-        <name>velvien</name>
-        <rename/>
-      </field>
-      <field>
-        <name>fecha</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>fecha</name>
-        <rename>fecha</rename>
-        <type>Date</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyy/MM/dd</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>688</xloc>
-      <yloc>160</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>output_prediccion</name>
-    <type>TableOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <connection>project_db</connection>
-    <schema>public</schema>
-    <table>prediccion</table>
-    <commit>1000</commit>
-    <truncate>N</truncate>
-    <ignore_errors>N</ignore_errors>
-    <use_batch>Y</use_batch>
-    <specify_fields>Y</specify_fields>
-    <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field/>
-    <partitioning_daily>N</partitioning_daily>
-    <partitioning_monthly>Y</partitioning_monthly>
-    <tablename_in_field>N</tablename_in_field>
-    <tablename_field/>
-    <tablename_in_table>Y</tablename_in_table>
-    <return_keys>N</return_keys>
-    <return_field/>
-    <fields>
-      <field>
-        <column_name>cc</column_name>
-        <stream_name>cc</stream_name>
-      </field>
-      <field>
-        <column_name>desciel</column_name>
-        <stream_name>desciel</stream_name>
-      </field>
-      <field>
-        <column_name>dirvienc</column_name>
-        <stream_name>dirvienc</stream_name>
-      </field>
-      <field>
-        <column_name>dirvieng</column_name>
-        <stream_name>dirvieng</stream_name>
-      </field>
-      <field>
-        <column_name>id_estado</column_name>
-        <stream_name>id_estado</stream_name>
-      </field>
-      <field>
-        <column_name>id_municipio</column_name>
-        <stream_name>id_municipio</stream_name>
-      </field>
-      <field>
-        <column_name>ndia</column_name>
-        <stream_name>ndia</stream_name>
-      </field>
-      <field>
-        <column_name>prec</column_name>
-        <stream_name>prec</stream_name>
-      </field>
-      <field>
-        <column_name>probprec</column_name>
-        <stream_name>probprec</stream_name>
-      </field>
-      <field>
-        <column_name>tmax</column_name>
-        <stream_name>tmax</stream_name>
-      </field>
-      <field>
-        <column_name>tmin</column_name>
-        <stream_name>tmin</stream_name>
-      </field>
-      <field>
-        <column_name>velvien</column_name>
-        <stream_name>velvien</stream_name>
-      </field>
-      <field>
-        <column_name>fecha</column_name>
-        <stream_name>fecha</stream_name>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>976</xloc>
-      <yloc>160</yloc>
+      <xloc>496</xloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1396,8 +1616,8 @@ at the end of
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
-      <yloc>160</yloc>
+      <xloc>1024</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

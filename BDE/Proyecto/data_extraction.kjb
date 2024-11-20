@@ -297,19 +297,19 @@
       <schedulerType>0</schedulerType>
       <intervalSeconds>0</intervalSeconds>
       <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
+      <hour>10</hour>
       <minutes>0</minutes>
       <weekDay>1</weekDay>
       <DayOfMonth>1</DayOfMonth>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>48</xloc>
-      <yloc>80</yloc>
+      <xloc>64</xloc>
+      <yloc>64</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
-      <name>Shell</name>
+      <name>python_script</name>
       <description/>
       <type>SHELL</type>
       <attributes/>
@@ -329,8 +329,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>176</xloc>
-      <yloc>80</yloc>
+      <xloc>224</xloc>
+      <yloc>64</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -368,15 +368,15 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>336</xloc>
-      <yloc>80</yloc>
+      <xloc>400</xloc>
+      <yloc>64</yloc>
       <attributes_kjc/>
     </entry>
   </entries>
   <hops>
     <hop>
       <from>Start</from>
-      <to>Shell</to>
+      <to>python_script</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -384,7 +384,7 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>Shell</from>
+      <from>python_script</from>
       <to>predicciones</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>

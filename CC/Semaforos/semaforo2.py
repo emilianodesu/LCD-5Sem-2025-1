@@ -27,6 +27,7 @@ n = threading.Semaphore(0)
 # Por default crea un objeto tipo 'Thread'
 class Producer(threading.Thread):
     """Clase productor"""
+
     def run(self):
         global CAPACITY, buffer, IN_INDEX
         global s, e, n
@@ -57,6 +58,7 @@ class Producer(threading.Thread):
 # Clase consumidor
 class Consumer(threading.Thread):
     """Clase consumidor"""
+
     def run(self):
         global CAPACITY, buffer, OUT_INDEX
         global s, e, n
