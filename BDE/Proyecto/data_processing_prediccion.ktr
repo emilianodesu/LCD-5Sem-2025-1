@@ -1262,32 +1262,6 @@ rows with filter value 3
         <repeat>N</repeat>
       </field>
       <field>
-        <name>nombre_est</name>
-        <path>$[*].nes</path>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-      </field>
-      <field>
-        <name>nombre_mun</name>
-        <path>$[*].nmun</path>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-      </field>
-      <field>
         <name>prec</name>
         <path>$[*].prec</path>
         <type>Number</type>
