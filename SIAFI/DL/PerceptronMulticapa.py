@@ -2,10 +2,9 @@ import matplotlib.pyplot as plt
 from sklearn.datasets import make_moons
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.optimizers import Adam
-
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.optimizers import Adam
 
 # Generando nuestros datos
 X, y = make_moons( n_samples = 1000 , noise = 0.3 , random_state=100)
